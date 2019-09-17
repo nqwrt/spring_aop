@@ -24,7 +24,7 @@
 		
 	<aop:config>
 		<aop:aspect id="logger" ref="logAop">
-			<aop:pointcut id="publicM" expression="within(edu.bit.ex.Student)"/>
+			<aop:pointcut id="publicM" expression="within(edu.bit.ex.*)"/>
 			<aop:around pointcut-ref="publicM" method="loggerAop" />
 		</aop:aspect>
 	</aop:config>
