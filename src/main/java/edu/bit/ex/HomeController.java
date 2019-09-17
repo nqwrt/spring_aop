@@ -34,8 +34,8 @@ public class HomeController {
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
-		System.out.println(student);
-		System.out.println(worker);
+		//System.out.println(student);
+		//System.out.println(worker);
 		
 		student.getStudentInfo();
 		worker.getWorkerInfo();
